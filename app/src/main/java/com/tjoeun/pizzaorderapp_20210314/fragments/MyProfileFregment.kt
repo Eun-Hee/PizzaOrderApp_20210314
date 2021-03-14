@@ -1,5 +1,6 @@
 package com.tjoeun.pizzaorderapp_20210314.fragments
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.tjoeun.pizzaorderapp_20210314.R
 import com.tjoeun.pizzaorderapp_20210314.adapters.MyViewpagerAdapter
 import kotlinx.android.synthetic.main.activity_edit_nickname.*
+import kotlinx.android.synthetic.main.fregment_my_profile.*
 
 class MyProfileFregment : Fragment() {
 
@@ -32,6 +34,20 @@ class MyProfileFregment : Fragment() {
 
         }
 
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_FOR_NICKNAME) {
+
+            if (requestCode == Activity.RESULT_OK) {
+
+                val newNickname = data?.getStringExtra("nick")
+
+                niclNameTxt.text = newNickname
+            }
+        }
     }
 
 }
