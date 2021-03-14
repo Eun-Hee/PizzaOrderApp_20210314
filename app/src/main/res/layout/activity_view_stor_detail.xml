@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoImg"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@mipmap/ic_launcher"
@@ -30,6 +31,7 @@
         android:layout_marginTop="15dp"/>
 
     <TextView
+        android:id="@+id/nameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="진짜 가게 이름 자리"
@@ -37,6 +39,7 @@
         android:layout_marginTop="5dp"/>
 
     <TextView
+        android:id="@+id/phoneTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="대표 전화번호"
@@ -55,6 +58,7 @@
 
 
     <Button
+        android:id="@+id/orderTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="전화 주문"/>
