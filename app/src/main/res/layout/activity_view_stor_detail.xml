@@ -39,31 +39,36 @@
         android:layout_marginTop="5dp"/>
 
     <TextView
-        android:id="@+id/phoneTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="대표 전화번호"
         android:textSize="20sp"
         android:layout_marginTop="5dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="전화번호자리"
-        android:textSize="20sp"/>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
+        <TextView
+            android:id="@+id/phoneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호자리"
+            android:textSize="20sp"/>
 
-    <Button
-        android:id="@+id/orderTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="전화 주문"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
+        <Button
+            android:id="@+id/orderCallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화 주문"/>
 
-
+    </LinearLayout>
 
 </LinearLayout>
