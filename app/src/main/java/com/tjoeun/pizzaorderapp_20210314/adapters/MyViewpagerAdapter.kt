@@ -7,6 +7,11 @@ import com.tjoeun.pizzaorderapp_20210314.fragments.MyProfileFregment
 import com.tjoeun.pizzaorderapp_20210314.fragments.PizzaStoresFregment
 
 class MyViewpagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return super.getPageTitle(position: Int)
+
+    }
     override fun getCount(): Int {
         return 2
     }

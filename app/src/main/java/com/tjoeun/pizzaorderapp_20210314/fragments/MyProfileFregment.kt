@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tjoeun.pizzaorderapp_20210314.R
+import com.tjoeun.pizzaorderapp_20210314.adapters.MyViewpagerAdapter
 
 class MyProfileFregment : Fragment() {
 
@@ -21,4 +22,5 @@ class MyProfileFregment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
     }
+
 }
