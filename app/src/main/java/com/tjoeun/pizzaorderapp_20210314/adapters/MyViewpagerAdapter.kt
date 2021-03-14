@@ -9,7 +9,10 @@ import com.tjoeun.pizzaorderapp_20210314.fragments.PizzaStoresFregment
 class MyViewpagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return super.getPageTitle(position: Int)
+        return when(position) {
+            0 -> "피자주문"
+            else -> "내정보설정"
+        }
 
     }
     override fun getCount(): Int {
