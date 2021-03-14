@@ -13,14 +13,14 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupEvents()
-        setValus()
+        setValues()
     }
 
     override fun setupEvents() {
 
     }
 
-    override fun setValus() {
+    override fun setValues() {
         mvpa = MyViewpagerAdapter(supportFragmentManager)
 
         myViewPager.adapter = mvpa

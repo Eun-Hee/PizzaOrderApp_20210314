@@ -35,7 +35,7 @@ class StoreAdapter(
 
         storeNameTxt.text = storeData.StoreName
 
-        Glide.with(mContext).
+        Glide.with(mContext).load(storeData.logourl).into(logoImg)
 
         return row
     }
