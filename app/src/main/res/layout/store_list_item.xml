@@ -9,7 +9,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-
+        <de.hdodenhof.circleimageview.CircleImageView
+            />
 
     </LinearLayout>
 
