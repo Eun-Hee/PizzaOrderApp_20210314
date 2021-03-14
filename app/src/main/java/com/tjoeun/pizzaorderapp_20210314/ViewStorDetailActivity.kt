@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.service.autofill.UserData
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import com.tjoeun.pizzaorderapp_20210314.datas.Store
 import kotlinx.android.synthetic.main.activity_view_stor_detail.*
@@ -27,7 +28,7 @@ class ViewStorDetailActivity : BaseActivity() {
     override fun setupEvents() {
 
         orderCallBtn.setOnClickListener {
-            val pl = object : PermissionGranted() {
+            val pl = object : PermissionListener {
 
                 val myUri = Uri.parse("tel:${mStoreData.phoneNum}")
                 val myItent = Intent(Intent.ACTION_CALL,myUri)
@@ -40,7 +41,7 @@ class ViewStorDetailActivity : BaseActivity() {
                 .setPermissions(Manifest.permission.call_)
                 .check()
 
-           overide fun
+
 
         }
 
